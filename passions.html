@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Justine Portfolio Passions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!--FAVICON  
+    <link rel="shortcut icon" href="favicon.ico"> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="./images/photographies.js"></script>
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="style/css/stylePassions.css">
+</head>
+
+<body>
+   <!-- LEFT ARROW -->
+   <a href="index.html" class="backButton" id="goback">&#8592; Retour</a>
+   <!-- "Go to Top" BUTTON -->
+    <a id="goToTopButton" href="#goback" class="goToTopButton">&#8593; Go to Top</a>
+
+    <section id="section1"></section>
+    <section id="section2"></section>
+    <section id="section3"></section>
+    <section id="section4"></section>
+    <section id="section5"></section>
+
+    <!-- LOGO BOTTOM  -->
+    <div class="bottomNavbar">   
+        <div class="logo-description"> 
+          <a href="index.html"><h2>JUSTINE THARCHIN</h2></a>
+        </div>
+    </div>
+    
+</body>
+<script>
+  var section1 = document.getElementById('section1');
+  var section2 = document.getElementById('section2');
+  var section3 = document.getElementById('section3');
+  var section4 = document.getElementById('section4');
+  var section5 = document.getElementById('section5');
+
+  function createCard(imageSrc, imageAlt) {
+      var cardElement = document.createElement('div');
+      cardElement.classList.add('card');
+
+      var imageElement = document.createElement('img');
+      imageElement.src = "./images/" + imageSrc;
+      imageElement.alt = imageAlt;
+
+      cardElement.appendChild(imageElement);
+
+      return cardElement;
+  }
+
+  imageData.sections.forEach(function(section, index) {
+      var sectionElement;
+      switch (index) {
+          case 0:
+              sectionElement = section1;
+              break;
+          case 1:
+              sectionElement = section2;
+              break;
+          case 2:
+              sectionElement = section3;
+              break;
+          case 3:
+              sectionElement = section4;
+              break;
+          case 4:
+              sectionElement = section5;
+              break;
+          default:
+              break;
+      }
+
+      section.images.forEach(function(image) {
+          var card = createCard(image.src, image.alt);
+          sectionElement.appendChild(card);
+      });
+  });
+
+</script>
+
+</html>
