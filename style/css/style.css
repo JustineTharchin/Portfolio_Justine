@@ -526,6 +526,13 @@ body {
     left: 200%;
   }
 
+  @media screen and (max-width: 1593px) {
+    .services-container, .passionate {
+      display: none;
+    }
+  }
+  
+
 /** PROFILE MODULE 4 **/
 .details-modal {
   max-width: 90%;
