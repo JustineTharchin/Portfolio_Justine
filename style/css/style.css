@@ -56,7 +56,6 @@ body {
     position: absolute;
     top: 0;
     left: -17px;
-    width: -webkit-fill-available;
   }
 
   /** LOADER **/
@@ -533,7 +532,6 @@ body {
       display: none;
     }
   }
-  
 
 /** PROFILE MODULE 4 **/
 .details-modal {
