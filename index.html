@@ -3,358 +3,231 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Justine Portfolio</title>
+	<title>Justine Tharchin Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
 
-  <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
 	<!--FAVICON  
 	<link rel="shortcut icon" href="favicon.ico"> -->
 
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 
+  <!-- Bootstrap JavaScript (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="style/css/style.css">
 	</head>
 <body>
-    <!-- LOADER 
+    <!-- LOADER    
     <div id="splash">
         <div class="anim">
           <div id="loader">
             <h2 class="loader-text">WHEN PASSION MEETS WORK.</h2>
           </div>
         </div>
-      </div> -->
+      </div>-->
+  <!-- HORIZONTAL SLIDE -->
+    <div class="hpanel">
+      <div class="module">
+        <div class="central-img">
+          <img src="./images/Integration-web-white.png" class="" id="module-1" />
+        </div>
     <!-- LOGO BOTTOM  -->
     <div class="bottomNavbar">   
-        <div class="logo-description"> 
-          <a href="./index.html"><h2>JUSTINE THARCHIN</h2></a>
-        </div>
+      <div class="logo-description"> 
+        <a href="./index.html" id="firstModule"><h2>JUSTINE THARCHIN</h2></a>
       </div>
-   <!-- HOMEPAGE -->
-   <div class="main-wrapper">
-    <svg height="0" width="0">
-        <symbol id="twitter" viewBox="0 0 800 800">
-            <path d="M679 239s-21 34-55 57c7 156-107 329-314 329-103 0-169-50-169-50s81 17 163-45c-83-5-103-77-103-77s23 6 50-2c-93-23-89-110-89-110s23 14 50 14c-84-65-34-148-34-148s76 107 228 116c-22-121 117-177 188-101 37-6 71-27 71-27s-12 41-49 61c30-2 63-17 63-17z"/>
-         </symbol> 
-         <symbol id="dribble" viewBox="0 0 800 800">
-            <path d="M400 665c-146 0-265-119-265-265s119-265 265-265 265 119 265 265-119 265-265 265zm223-229s-69-22-140-9c30 81 43 161 43 161s82-49 97-152zM488 609s-15-90-48-172c-132 44-179 142-179 142s96 83 227 30zm-256-57c80-128 193-152 193-152s-12-27-19-39c-124 37-232 32-232 32s-8 87 58 159zm-54-198s102 2 210-28c-38-71-84-130-84-130-107 49-126 158-126 158zm169-174s50 65 85 134c84-31 118-83 118-83s-76-78-203-51zm102 167c6 11 20 44 20 44s64-11 157 7c0-85-51-141-51-141s-38 55-126 90z"/>
-          </symbol>
+    </div>
+ <!-- HOMEPAGE -->
+      <div class="title-wrapper">
+          <a href="./passions.html" id="mask-btn"><div class="button">Curious ?</a>
+      </div>
          
-         <symbol id="codepen" viewBox="0 0 800 800">
-            <path d="M140 482V320q0-10 10-18l238-158q12-8 24 0l238 158q9 6 10 19v158q0 10-10 19L412 656q-12 8-24 0L150 497q-9-6-10-15zm282-278v104l97 65 78-52zm-44 104V204L203 321l78 52zm-193 54v75l56-37zm193 234V492l-97-65-78 52zm22-143l79-53-79-53-79 53zm22 143l175-117-78-52-97 64v105zm193-159v-75l-56 38z"/>
-          </symbol>
-      </svg>
-      
-      <div class="slider-content">
-        
-        <div class="slider-wrapper">
-          <div class="slider-container"> 
-            <div class="control-nav">
-              <ul>
-                <li class="active"><span class="line"></span><span class="number">1</span></li>
-                <li><span class="line"></span><span class="number">2</span></li>
-                <li><span class="line"></span><span class="number">3</span></li>
-                <li><span class="line"></span><span class="number">4</span></li>
-              </ul>
-            </div>
-           <div class="lines-wrapper">
-             <div class="croses">
-               <span>+</span>
-               <span>+</span>
-               <span>+</span>
-               <span>+</span>
-             </div>
-             <span class="vertical"></span>
-             <span class="horizontal"></span>
-             <span class="horizontal"></span>
-             <span class="horizontal"></span>
-             <span class="horizontal"></span>
-            </div>
-            <div class="image-mask">
-              <img class="" src="./images/red-flower.png" alt="" />
-            </div>
-            <div class="slide active red" data-order="1" data-color="#EE4654" data-img="./images/red-flower.png">
-              
-              <div class="fake-bg red"></div>
-              <div class="slide-content ">
-                 <div class="image-caption">
-                   <span class="line"></span> 
-                   <span>Dev web / Design UX/UI</span>
-                   
-                  </div>
-                <div class="title-background">
-                  <span class="mask-wrap">
-                      <span class="mask">Love</span>
-                    </span>
-                    <span class="mask-wrap">
-                      <span class="mask">Design</span>
-                    </span>
-                </div>
-                
-                <div class="title-wrapper">
-                  <h1>
-                    <span class="mask-wrap">
-                      <span class="mask">Web</span>
-                    </span>
-                    <span class="mask-wrap">
-                      <span class="mask">Integration</span>
-                    </span>
-                  </h1>
-                </div>
+  <!-- MAIN IMAGE --> 
+      <img src="./images/purple-flowers-withhand.png" class="main-img">
+<!-- SOCIAL NETWORKS --> 
+      <div class="social-container">
+        <a href="https://www.linkedin.com/in/justine-tharchin/" target="_blank">
+          <i class="fa fa-linkedin-square"></i>
+        </a>
+        <a href="https://github.com/JustineTharchin" target="_blank">
+          <i class="fa fa-github-square"></i>
+        </a>
+      </div>
+</div>
+<figure class="item-content group">
+  <figcaption class="item-caption">
+    <div class="left-description">
+    <p>
+      <strong>Web Developer</strong><br>
+      HTML<br>CSS<br>JavaScript<br>React.js<br>Node.js
+    </p>
+    <p>
+      <strong>Webdesign UX/UI</strong><br>
+       Adobe Suite <br> Figma
+    </p>
+    </div>
+        <!-- BTNS MODAL  -->
+        <div class="modaux">
+          <a class="showCV" href="#">Show my CV ></a><br>
+          <a class="sendEmail" href="mailto:justine.tharchin@gmail.com?subject=Objet%20du%20message&body=Bonjour%20Justine,%0A%0AVoici%20votre%20message%20prérempli.">
+            Send me an email >
+          </a><br>
+          <a class="contactLinkedin" href="https://www.linkedin.com/in/justine-tharchin/" target="_blank">
+            Contact me via LinkedIn >
+          </a>
+
+          <!-- MODAL CV  -->
+          <div id="modal" class="modal">
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <embed src="images/CV_Justine_Tharchin_developpeuse web.pdf" type="application/pdf" width="100%" height="100%">
               </div>
-            </div>
-            
-           <div class="slide blue" data-order="2" data-color="#EE4654" data-img="./images/flowers.png">
-              <div class="fake-bg blue"></div>
-              <div class="slide-content ">
-                
-                <div class="image-caption">
-                   <span class="line"></span>
-                    <span>About / Profile</span>
-                    
-                  </div>
-                
-                <div class="title-background">
-                    <span class="mask-wrap">
-                      <span class="mask">Work</span>
-                    </span>
-                    <span class="mask-wrap">
-                      <span class="mask">With passion</span>
-                    </span>
-                </div>
-                
-                <div class="title-wrapper">
-                  <h1>
-                     <span class="mask-wrap">
-                      <span class="mask">I am</span>
-                    </span>
-                    <span class="mask-wrap">
-                      <span class="mask">Passionate</span>
-                    </span>
-                  </h1>
-                  <details>
-                    <summary>
-                      <div class="button">
-                        See more about me
-                      </div>
-                      <div class="details-modal-overlay"></div>
-                    </summary>
-                    <div class="details-modal">
-                      <div class="details-modal-close">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L7 5.58579L1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L5.58579 7L0.292893 12.2929C-0.0976311 12.6834 -0.0976311 13.3166 0.292893 13.7071C0.683417 14.0976 1.31658 14.0976 1.70711 13.7071L7 8.41421L12.2929 13.7071C12.6834 14.0976 13.3166 14.0976 13.7071 13.7071C14.0976 13.3166 14.0976 12.6834 13.7071 12.2929L8.41421 7L13.7071 1.70711Z" fill="black" />
-                        </svg>
-                      </div>
-                      <div class="details-modal-title">
-                        <h3>WHO I AM</h3>
-                      </div>
-                      <div class="details-modal-content">
-                        <p>
-                         
-                        </p>
-                        <div class="card-container">
-                          <img class="round" src="./images/about.jpg" alt="user" />
-                          <h5>Justine Tharchin</h5>
-                          <h6>Paris</h6>
-                          <p> 
-                           "Enthusiastic about innovating web solutions as a front-end developer and UX/UI designer."
-                          </p>
-                          <div class="buttons">
-                            <a href="https://www.linkedin.com/in/justine-tharchin/" target="_blank">
-                              <button class="button-profile">
-                                <i class="fa fa-linkedin-square" style="font-size:45px;color:#0a66c2;"></i>
-                              </button>
-                            </a>
-                          </div>
-                          <div class="skills">
-                            <h6>Skills</h6>
-                            <ul>
-                              <li>UI / UX</li>
-                              <li>Adobe Suite</li>
-                              <li>Figma</li>
-                              <li>Front End Development</li>
-                              <li>HTML</li>
-                              <li>CSS</li>
-                              <li>Sass</li>
-                              <li>Bootstrap</li>
-                              <li>JavaScript</li>
-                              <li>React</li>
-                              <li>Material UI</li>
-                              <li>Node</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </details>
-                </div>
-               
-              </div>
-            </div>
-            
-           <div class="slide green" data-order="3" data-color="#7ffe8e" data-img="./images/rose.png">
-              <div class="fake-bg green"></div>
-              <canvas class="canvas" data-image=""></canvas>
-              <div class="slide-content ">
-                
-                <div class="image-caption">
-                   <span class="line"></span>
-                    <span>Love Coding since 2015</span>
-                    
-                  </div>
-                
-                <div class="title-background">
-                    <span class="mask-wrap">
-                      <span class="mask">Love</span>
-                    </span>
-                    <span class="mask-wrap">
-                      <span class="mask">Coding</span>
-                    </span>
-                </div>
-                
-                <div class="title-wrapper">
-                  <h1>
-                     <span class="mask-wrap">
-                      <span class="mask">I work with</span>
-                    </span>
-                    <span class="mask-wrap">
-                      <span class="mask">Javascript</span>
-                    </span>
-                  </h1>
-                </div>
-               
-              </div>
-            </div>
-            
-            <div class="slide grey" data-order="4" data-color="#bcbcbc" data-img="./images/purple-flowers-withhand.png">
-              <div class="fake-bg grey"></div>
-              <div class="slide-content ">
-                
-                <div class="image-caption">
-                   <span class="line"></span>
-                    <span>Passions / Photography</span>
-                    
-                  </div>
-                
-                <div class="title-background">
-                    <span class="mask-wrap">
-                      <span class="mask">Love</span>
-                    </span>
-                    <span class="mask-wrap">
-                      <span class="mask">ART</span>
-                    </span>
-                </div>
-                
-                <div class="title-wrapper">
-                  <h1>
-                     <span class="mask-wrap">
-                      <span class="mask">Photo</span>
-                    </span>
-                    <span class="mask-wrap">
-                      <span class="mask">Adobe Suite</span>
-                    </span>
-                  </h1>
-                  <a href="./passions.html" id="mask-btn"><div class="button">Curious ?<br></div></a>
-                </div>
-              </div>
-            </div>
-            
           </div>
         </div>
-        <!-- FOOTER MENU -->
-          <div class="footer-wrapper">
+    </figcaption>
+  </figure>  
+      </div>
+      <div class="module"><img src="./images/computer.jpg" class="module-img-two" alt="When passion meets work" /></div>
+      <div class="module">
+        <h4>" When passions meet work "</h4>
+        <section class="services-container" data-section="services">
+         
+            <!-- WHAT I DO ?... -->
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                <span class="heading-meta">What I do?</span>
+              </div>
+            </div>
+              <div class="row row-pt-md">
+                <div class="col-md-4 text-center nft">
+                  <div class="services">
+                    <div class="desc">
+                      <h3>Front-end</h3>
+                      <p class="services-text">Création d'interfaces utilisateur en utilisant les dernières technologies web.SEO? MOBILE FIRST</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center nft">
+                  <div class="services">
+                    <div class="desc">
+                      <h3>Design UX/UI</h3>
+                      <p  class="services-text">Allier esthétique et fonctionnalité. L'experience utilisateur au coeur du design.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center nft">
+                  <div class="services">
+                    <div class="desc">
+                      <h3>Back-end</h3>
+                      <p  class="services-text">Le Fullstack me permet de comprendre l'écosystème complet du développement web.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                    <span class="heading-meta">Hobbies</span>
+                  </div>
+                </div>
+            <!-- HOBBIES DRAWING PHOTOGRAPHY... -->
+          <div class="row row-pt-md">
+            <div class="col-md-4 text-center nft">
+              <div class="services">
+                <div class="desc">
+                  <h3>PHOTOGRAPHIE</h3>
+                  <p  class="services-text">Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 text-center nft">
+              <div class="services">
+                <div class="desc">
+                  <h3>DESSIN</h3>
+                  <p  class="services-text">Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 text-center nft">
+              <div class="services">
+                <div class="desc">
+                  <h3>GRAPHISME</h3>
+                  <p class="services-text">Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+      </div>
+     
+    <div class="module">
+      <h4 class="passionate">" I am passionate "</h4>
+      <div class="details-modal">
+        <div class="details-modal-close">
+         
+        </div>
+        <div class="details-modal-title">
+          <h6>WHO I AM</h6>
+        </div>
+        <div class="details-modal-content">
+        <div class="card-container">
+          <img class="round" src="./images/about.jpg" alt="user" />
+          <h5>Justine Tharchin</h5>
+          <h6>Paris</h6>
+          <div class="buttons">
+            <a href="https://www.linkedin.com/in/justine-tharchin/" target="_blank">
+              <button class="button-profile">
+                <i class="fa fa-linkedin-square" style="font-size:45px;color:#fff;"></i>
+              </button>
+            </a>
+          </div>
+          <p> 
+          "Enthusiastic about innovating web solutions as a front-end developer and UX/UI designer."
+          </p>
+          <div class="skills">
+            <h6>Skills</h6>
             <ul>
-              <li class="active box" data-id="1">
-                <div class="hover-box"></div>
-                <div class="box-content">
-                  <span>what i do ?</span>
-                </div>
-              </li>
-              <li class="box" data-id="2">
-                 <div class="hover-box"></div>
-                <div class="box-content">
-                  <span>who i am ?</span>
-                </div>
-              </li>
-              <li class="box" data-id="3" > 
-                <div class="hover-box"></div>
-                <div class="box-content">
-                <span>how i work ?</span>
-                </div>
-              </li>
-              <li class="box" data-id="4"  >
-                <div class="hover-box"></div>
-                <div class="box-content">
-                <span>other passions</span>
-                </div>
-               </li>
+              <li>UI / UX</li>
+              <li>Adobe Suite</li>
+              <li>Figma</li>
+              <li>Front End Development</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Sass</li>
+              <li>Bootstrap</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Material UI</li>
+              <li>Node</li>
             </ul>
           </div>
-      </div>
- <!-- SOCIAL NETWORKS --> 
-        <div class="social-container">
-          <a href="https://www.linkedin.com/in/justine-tharchin/" target="_blank">
-            <i class="fa fa-linkedin-square"></i>
-          </a>
-          <a href="https://github.com/JustineTharchin" target="_blank">
-            <i class="fa fa-github-square"></i>
-          </a>
         </div>
-   
-    </div>
-  </div>
-  <figure class="item-content group">
-    <figcaption class="item-caption">
-      <div class="left-description">
-      <p>
-        <strong>Web Developer</strong><br>
-        HTML<br>CSS<br>JavaScript<br>React.js<br>Node.js
-      </p>
-      <p>
-        <strong>Webdesign UX/UI</strong><br>
-         Adobe Suite <br> Figma
-      </p>
       </div>
-          <!-- BTNS MODAL  -->
-          <div class="modaux">
-            <a class="showCV" href="#">Afficher mon CV ></a><br>
-            <a class="sendEmail" href="mailto:justine.tharchin@gmail.com?subject=Objet%20du%20message&body=Bonjour%20Justine,%0A%0AVoici%20votre%20message%20prérempli.">
-              M'envoyer un email >
-            </a><br>
-            <a class="contactLinkedin" href="https://www.linkedin.com/in/justine-tharchin/" target="_blank">Me contacter via LINKEDIN ></a>
-
-            <!-- MODAL CV  -->
-            <div id="modal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <embed src="images/CV_Justine_Tharchin_developpeuse web.pdf" type="application/pdf" width="100%" height="100%">
-                </div>
-            </div>
-          </div>
-      </figcaption>
-    </figure>  
+      
+    </div>
+    <a href="index.html" class="goToHomeButton">&larr; Go to Home</a>
   </div>
+</div>
 </body>
 
 <script>
+    // TRANSITION TO OTHER PAGES
+    var maskBtn = document.getElementById('mask-btn');
+
+    maskBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        TweenMax.to('.body', 1, { opacity: 0, onComplete: function() {
+            window.location.href = maskBtn.getAttribute('href');
+        }});
+    });
 //MODAL CV
 var modal = document.getElementById('modal');
 var closeButton = document.getElementsByClassName('close')[0];
@@ -375,368 +248,36 @@ var showCVButton = document.getElementsByClassName('showCV')[0];
         }
     }
 
-//MAIN SLIDER
-var mySlider = {
-  
-  config: {
-    
-    slider : '.slider-content',
-    activeSlide : '.slide.active',
-    footerButtons: '.footer-wrapper .box',
-    bgPicture: '.image-mask img',
-    nav : '.control-nav',
-    position : {
-        x: 350,
-        alpha:1,
-    },
-   nextPosition :{
-        x: 150,
-        alpha:1,
-    },
-   
-  
-  },
-  
-   init : function(config) {
-     
-     this.canvasInit();
-     $(mySlider.config.footerButtons).
-            click(function() {
-                mySlider.changeButton($(this));
-            });
-    },
-   
-  canvasInit : function() {
-    
-    var canvas = $('.canvas')[0];
-    var ctx = canvas.getContext('2d');
-    var w = $(mySlider.config.activeSlide).width();
-    var h = $(mySlider.config.activeSlide).height();
-    var img = document.createElement('IMG'); 
-   
-    var position = {
-        x: 150,
-        alpha:1,
+    const boxes = gsap.utils.toArray('.box');
+boxes.forEach(box => {
+  gsap.to(box, { 
+    x: 300,
+    scrollTrigger: {
+      trigger: box,
+      scrub: true,
+      markers: true,
     }
-    
-    if (window.matchMedia("(min-width: 860px)").matches) {
-        position = {
-            x: 200,
-            alpha:1,
-        }
+  })
+});
+
+
+var targets = gsap.utils.toArray(".hpanel");
+targets.forEach((slide, i) => {
+  var container = slide;
+  gsap.to(container, {
+    x: () => -(container.scrollWidth - document.documentElement.clientWidth) + "px",
+    ease: "none",
+    scrollTrigger: {
+      trigger: container,
+      invalidateOnRefresh: true,
+      pin: true,
+      scrub: 1,
+      end: () => "+=" + container.offsetWidth
     }
-    
-    if (window.matchMedia("(min-width: 1200px)").matches) {
-        position = {
-            x: 250,
-            alpha:1,
-        }
-    }
-    
-    canvas.width = w;
-    canvas.height = h;
-    mySlider.drawMask(canvas, ctx, position, img);
-    
-  },
-  
-  drawMask : function(canvas, ctx, position,img) {
-    
-    var w = $(mySlider.config.activeSlide).width();
-    var h = $(mySlider.config.activeSlide).height();
-    var cy = 50;
-    var mStroke = 25; 
-    var mWidth = 180;
-    var mHeight = 300;
-    
-    if (window.matchMedia("(min-width: 860px)").matches) {
-      mStroke = 35; 
-      cy = 80;
-      mWidth = 260;
-      mHeight = 380;
-    }
-    
-    if (window.matchMedia("(min-width: 1200px)").matches) {
-      
-      mStroke = 40; 
-      cy = 120;
-      mWidth = 360;
-      mHeight = 460;
-    }
-
-    ctx.globalAlpha=position.alpha;
-    ctx.clearRect(0,0,w,h);
-    ctx.save();
-    ctx.beginPath();
-    ctx.rect(position.x,cy,mWidth,mStroke);
-    ctx.clip();
-    ctx.drawImage(img,0,0, w, h);
-    ctx.restore();
-    
-    ctx.save();
-    ctx.rect(position.x, cy, mStroke, mHeight);
-    ctx.clip();
-    ctx.drawImage(img,0,0, w, h);
-    ctx.restore();
-    
-    ctx.save();
-    ctx.rect( position.x +mWidth, cy, mStroke, mHeight);
-    ctx.clip();
-     ctx.drawImage(img,0,0, w, h);
-    ctx.restore();
-    
-    ctx.save();
-    ctx.rect(position.x, cy + (mHeight-mStroke), mWidth, mStroke);
-    ctx.clip();
-    ctx.drawImage(img,0,0, w, h);
-    ctx.restore();
-    
-  },
-  
-  changeSlide : function(id) {
-   
-   var activeSlide = $(mySlider.config.activeSlide);
-   var newSlide = $(mySlider.config.slider).find('[data-order="'+id+'"]');
-    
-    this.animateSlide(activeSlide, newSlide);
-    this.createMask(activeSlide, newSlide);
-    
-  },
-  
-  changeNav : function(id) {
-    
-    var activeNav = $(mySlider.config.nav).find('li');
-    
-    activeNav.removeClass('active');
-    activeNav.eq(id-1).addClass('active');
-    
-  },
-  
-  changeButton : function(el) {
-    
-    var activeButton = $(mySlider.config.slider).find('.box.active');
-    var target = el.data('id');
-    
-    if( !(el.hasClass('active')) ){
-     
-      activeButton.removeClass('active');
-      el.addClass('active');
-      this.changeSlide(target); 
-      this.changeNav(target); 
-    }
-},
-  
-  createMask : function(active, newSlide) {
-    
-    var currentCanvas = active.find('.canvas')[0];
-    var nextCanvas = newSlide.find('.canvas')[0];
-    var position = mySlider.config.position;
-    var positionNext =  mySlider.config.nextPosition;  
-    
-    var currentctx = currentCanvas.getContext('2d');
-    var nextctx = nextCanvas.getContext('2d');
-    
-    var w = $(mySlider.config.activeSlide).width();
-    var h = $(mySlider.config.activeSlide).height();
-    
-    var currentImg = document.createElement('IMG'); 
-    var nextImg = document.createElement('IMG'); 
-    var movex = 200;
-
-    var position = {
-        x: 350,
-        alpha:1,
-    }
-   var nextPosition={
-        x: 150,
-        alpha:1,
-    }
-      
-     TweenMax.set(positionNext, {x:"150"});
-    
-    if (window.matchMedia("(min-width: 860px)").matches) {
-      
-      position = {
-         x: 400,
-        alpha:1,
-      };
-      
-      nextPosition = {
-          x: 200,
-          alpha:1,
-      };
-      
-        movex = 200;
-      
-       TweenMax.set(positionNext, {x:"200"});
-    }
-    
-    if (window.matchMedia("(min-width: 1200px)").matches) {
-        position = {
-         x: 450,
-        alpha:1,
-      };
-      
-      nextPosition = {
-          x: 250,
-          alpha:1,
-      };
-      
-       movex = 200; 
-       TweenMax.set(positionNext, {x:"250"});
-    }
-    
-    currentImg.src = active.find('canvas').data('image');
-    nextImg.src = newSlide.find('canvas').data('image');
-    
-    currentCanvas.width = nextCanvas.width = w;
-    currentCanvas.height = nextCanvas.height = h;
-     
-    TweenMax.to(newSlide.find('.canvas'),0.3,{autoAlpha:1, delay:1.5});
-    
-    TweenMax.to(positionNext, 0.5, {x:"-="+movex+"", onUpdate: function() {
-     
-       mySlider.drawMask(currentCanvas, currentctx, positionNext, currentImg);
-
-     },  onComplete: function() {
-       
-       TweenMax.to(active.find('.canvas'), 0.3, {autoAlpha:0}, "-=0.2");
-       TweenMax.to(newSlide.find('.canvas'), 0.3, {autoAlpha:0}, "-=0.2");
-     }});
-    
-    
-    nextImg.onload = function() {
-      mySlider.drawMask(nextCanvas, nextctx, positionNext, nextImg);
-      
-       TweenMax.to(position, 1, {x:"-="+movex+"", delay:1.3, onUpdate: function() {
-     
-           mySlider.drawMask(nextCanvas, nextctx, position, nextImg);
-
-         }});
-      
-      console.log(position)
-    }
-    
-  },
-  
-  animateSlide : function(active, newSlide) {
-      
-      var w = $(mySlider.config.slider).width();
-      var backgroundImg = $(mySlider.config.bgPicture);
-      var activeTitleBg = active.find('.title-background .mask-wrap');
-      var activeMainTitle = active.find('.title-wrapper h1 .mask-wrap');
-      var activeSlideContent = active.find('.slide-content'); 
-      var activefakeBg = active.find('.fake-bg');
-      var activeImageCaption = active.find('.image-caption');
-
-      var newTitleBg = newSlide.find('.title-background .mask-wrap');
-      var newTitle = newSlide.find('.title-wrapper h1 .mask-wrap');
-      var newBgPicture = newSlide.data('img');
-      var newfakeBg = newSlide.find('.fake-bg');
-      var nextImageCaption = newSlide.find('.image-caption');
-      var img = $('<img />')
-      
-      newSlide.addClass('next');
-      
-      activeMainTitle.addClass('mask-up')
-      activeTitleBg.addClass('mask-down')
-      activeImageCaption.addClass('mask-up');
-      newTitle.addClass('mask-down');
-      newTitleBg.addClass('mask-up');
-      nextImageCaption.addClass('mask-down');
-      
-      
-      TweenMax.set(activeSlideContent, {width:w});
-      TweenMax.set(activefakeBg, {width:w});
-      TweenMax.set(newfakeBg, {autoAlpha:0});
-      
-      TweenMax.to(active, 0.8, {width:'0%', ease: Power4.easeIn});
-      TweenMax.to(activefakeBg, 0.3, {autoAlpha: 0, delay:0.4});
-      TweenMax.to(backgroundImg, 0.3, {autoAlpha: 0, delay:0.4});
-    
-      setTimeout(function() {
-        backgroundImg.remove();
-        img.attr('src', newBgPicture).css('opacity',0);
-        
-        $('.image-mask').append(img);
-        
-      },600)
-    
-      TweenMax.to(newfakeBg, 0.5, {autoAlpha: 1, delay:1});
-      TweenMax.to(img, 0.5, {autoAlpha: 1, delay:1});
-      
-      setTimeout(function() {
-        newTitle.removeClass('mask-down');
-        newTitleBg.removeClass('mask-up');
-        
-      },800);
-      
-    
-      
-      setTimeout(function() {
-         active.removeClass('active');
-         newSlide.addClass('active').removeClass('next');
-         TweenMax.set(active, {width:'100%'});
-         activeMainTitle.removeClass('mask-up');
-         activeTitleBg.removeClass('mask-down');
-        activeImageCaption.removeClass('mask-up');
-        nextImageCaption.removeClass('mask-down');
-
-      },1500)
-  }
-  
-}
-
-function debounce(func, wait, immediate) {
-	var timeout;
-	return function() {
-		var context = this, args = arguments;
-		var later = function() {
-			timeout = null;
-			if (!immediate) func.apply(context, args);
-		};
-		var callNow = immediate && !timeout;
-		clearTimeout(timeout);
-		timeout = setTimeout(later, wait);
-		if (callNow) func.apply(context, args);
-	};
-};
+  })
+});
 
 
-    $(document).ready(function() { 
-
-    mySlider.init(); 
-
-    var fn = debounce(function() {
-
-        mySlider.init()
-
-    }, 250);
-
-    $(window).on('resize', fn);
-
-    });
-
-  // MODAL TOP RIGHT BUTTON (PROFILE)
-    document.addEventListener('click', function() {
-      var profileBtn = document.getElementById("profile-btn");
-
-      profileBtn.addEventListener("click", function(event) {
-          event.preventDefault();
-          var detailsModal = document.querySelector(".details-modal");
-          if (detailsModal) {
-              detailsModal.style.display = "block";
-          }
-      });
-    });
-
-    // TRANSITION TO OTHER PAGES
-    var maskBtn = document.getElementById('mask-btn');
-
-    maskBtn.addEventListener('click', function(event) {
-        event.preventDefault();
-        TweenMax.to('.main-wrapper', 1, { opacity: 0, onComplete: function() {
-            window.location.href = maskBtn.getAttribute('href');
-        }});
-    });
-
+ScrollTrigger.sort();
 </script>
+</html>
