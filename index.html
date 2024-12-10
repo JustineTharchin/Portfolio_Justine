@@ -48,7 +48,7 @@
     </div>
  <!-- HOMEPAGE -->
       <div class="title-wrapper">
-          <a href="./passions.html" id="mask-btn"><div class="button">Curious ?</a>
+        <a href="./images/Développeuse-web-Justine-Tharchin.pdf" id="mask-btn" download="Développeuse-web-Justine-Tharchin.pdf"><div class="button">Download CV</a>
       </div>
 <!-- SOCIAL NETWORKS --> 
       <div class="social-container">
@@ -86,7 +86,7 @@
           <div id="modal" class="modal">
               <div class="modal-content">
                   <span class="close">&times;</span>
-                  <embed src="images/CV_Justine_Tharchin_developpeuse web.pdf" type="application/pdf" width="100%" height="100%">
+                  <embed src="images/Développeuse-web-Justine-Tharchin.pdf" type="application/pdf" width="100%" height="100%">
               </div>
           </div>
         </div>
@@ -273,7 +273,21 @@ targets.forEach((slide, i) => {
     }
   })
 });
-
+$(document).ready(function() {
+      // Check if the user has already visited
+      var hasVisited = localStorage.getItem('hasVisited');
+      if (!hasVisited) {
+        // Show loader
+        $("#splash").show();
+        setTimeout(function() {
+          $("#splash").fadeOut();
+          localStorage.setItem('hasVisited', 'true');
+        }, 3000); // Set to the desired duration in milliseconds
+      } else {
+        // Hide loader
+        $("#splash").hide();
+      }
+    });
 
 ScrollTrigger.sort();
 </script>
